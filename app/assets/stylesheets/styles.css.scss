@@ -1,9 +1,36 @@
 body{
 	background:url("bkgnd-gray.jpg");		
 }
+
+/////////////// NAVIGATION ///////////////
 .nav{
-	background:url("bkgnd-blue.jpg");		
+	background:url("bkgnd-blue.jpg");
+	border-bottom: 3px solid #8eceff;
 	a{
 		color:#fff;
+		margin: 3em 0 2em 2em;
+  	display: inline-block;
+	}
+}
+
+/////////////// HOME PAGE ///////////////
+.home{
+	.main{
+		background:#fff;
+		a{
+			display: inline-block;
+			border:1px solid red;
+			&:hover{
+				border:1px solid blue;
+				background:red;
+			}
+			#test{
+				opacity:.5;
+				&:hover{opacity:.5;}
+			}
+		}
+		p{
+			padding:2%;
+		}
 	}
 }

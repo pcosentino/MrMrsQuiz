@@ -1,2 +1,14 @@
 .container
 	%h1 Gallary Page
+	.row
+		%button.btn.btn-success.col-md-1.incorrect A
+		%p.col-md-3 one
+		%button.btn.btn-success.col-md-1.incorrect B
+		%p.col-md-3 two
+	.row
+		%button.btn.btn-success.sweet-12.col-md-1.incorrect C
+		%p.col-md-3 three
+		%button.btn.btn-success.col-md-1.correct D
+		%p.col-md-3 four
+
+	= link_to( "next", pages_contact_path, :id => 'next')

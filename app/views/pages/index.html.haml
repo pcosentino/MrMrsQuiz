@@ -11,6 +11,10 @@
 			.carousel-inner{:role => "listbox"}
 				.item.active
 					= image_tag("slide1.jpg")
+					.carousel-caption
+						%h1 YOUR AD
+						%h3 ON THE ROAD!
+						%h4 ASK ABOUT CAR WRAPS!
 				.item
 					= image_tag("http://placehold.it/1200x431")
 				.item
@@ -26,16 +30,20 @@
 				%span.sr-only Next
 	.row.main
 		%p.col-md-12 
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in molestie velit. Duis ut risus dolor. Fusce lobortis neque in risus posuere, in fermentum quam eleifend. Donec dolor tortor, tempor blandit urna a, porta vulputate neque. Morbi vel eros quis est ornare vehicula ac eget neque. Ut pretium hendrerit neque, at iaculis purus fringilla eu. Suspendisse ac quam et nisl hendrerit egestas.
+			Le's Signs has been fabricating signs for businesses in the Chicago, IL area since 1984. Owner Tom Le does all work himself and can accommodate any size neon sign, banner or billboard. Let Le’s Signs promote your business! Mr. Le prides himself in his professionalism when working with each customer to meet both the functionality and design you prefer. 
 		%article.col-md-3.col-sm-6
-			= link_to( image_tag("sub-cat1.jpg"), pages_gallary_path, :id => 'test')
+			%h2 General
+			= link_to( "", pages_gallary_path, :id => 'general')
 			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in molestie velit. Duis ut risus dolor. 
 		%article.col-md-3.col-sm-6
-			= link_to( image_tag("http://placehold.it/244x244"), pages_gallary_path, :id => 'electric')
+			%h2 Electric
+			= link_to( "", pages_gallary_path, :id => 'electric')
 			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in molestie velit. Duis ut risus dolor. 
 		%article.col-md-3.col-sm-6
-			= link_to( image_tag("http://placehold.it/244x244"), pages_gallary_path, :id => 'print')
+			%h2 Print
+			= link_to( "", pages_gallary_path, :id => 'print')
 			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in molestie velit. Duis ut risus dolor. 
 		%article.col-md-3.col-sm-6
-			= link_to( image_tag("http://placehold.it/244x244"), pages_gallary_path, :id => 'other')
+			%h2 Other
+			= link_to( "", pages_gallary_path, :id => 'other')
 			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in molestie velit. Duis ut risus dolor. 

@@ -22,6 +22,18 @@ body{
 	}
 }
 
+/////////////// FOOTER ///////////////
+footer{
+	background:url("bkgnd-blue.jpg");
+	border-bottom: 3px solid #8eceff;
+	h5{
+		width:100%;
+		color:#fff;
+		margin:2em 0;
+		text-align: center;
+	}
+}
+
 /////////////// HOME PAGE ///////////////
 .home{
 	#myCarousel{

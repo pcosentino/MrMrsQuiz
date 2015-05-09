@@ -1,0 +1,21 @@
+.question.container
+	%h1.col-md-3 Question #5
+	%h4.progress-title.col-md-9 Progress Bar
+	.progress.col-md-9
+		.progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "50", "aria-valuenow" => "50", :role => "progressbar", :style => "width:50%"}
+			50% (half way there)
+
+	%h3.col-md-12 Paolo is not much of a "movie buff" but he can recite every line from a particular movie series. What is that movie series?
+	.answer.container
+		.row
+			%button.btn.btn-info.col-md-1.incorrect A
+			%p.col-md-3 Halloween Series
+			%button.btn.btn-info.col-md-1.incorrect B
+			%p.col-md-3 Nightmare on Elm Street Series
+		.row
+			%button.btn.btn-info.sweet-12.col-md-1.correct C
+			%p.col-md-3 Rocky Series
+			%button.btn.btn-info.col-md-1.incorrect D
+			%p.col-md-3 Exorcist Series
+
+		= link_to( "next", questions_six_path, :id => 'next')

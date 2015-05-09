@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Le's Sign Chicago</title>
+  <title>Mr./Mrs. Quiz</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application'%>
   <%= csrf_meta_tags %>
@@ -9,10 +9,12 @@
 
   <script src="../assets/sweetalert.min.js"></script> 
   <link rel="stylesheet" type="text/css" href="../assets/sweetalert.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<%= render partial: "navigation" %>
+<%= render partial: "pages/navigation" %>
 <%= yield %>
-<%= render partial: "footer" %>
+<%= render partial: "pages/footer" %>
 </body>
 </html>

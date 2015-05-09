@@ -1,0 +1,21 @@
+.question.container
+	%h1.col-md-3 Question #4
+	%h4.progress-title.col-md-9 Progress Bar
+	.progress.col-md-9
+		.progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "40", "aria-valuenow" => "40", :role => "progressbar", :style => "width:40%"}
+			40%
+
+	%h3.col-md-12 Paolo is a big fan of listening to music. He likes House, Alternative and Country. Who is Paolo's favorite musician?
+	.answer.container
+		.row
+			%button.btn.btn-info.col-md-1.incorrect A
+			%p.col-md-3 Pitbull
+			%button.btn.btn-info.col-md-1.incorrect B
+			%p.col-md-3 Taylor Swift
+		.row
+			%button.btn.btn-info.sweet-12.col-md-1.incorrect C
+			%p.col-md-3 Prince
+			%button.btn.btn-info.col-md-1.correct.dierks D
+			%p.col-md-3 Dierks Bentley
+
+		= link_to( "next", questions_five_path, :id => 'next')

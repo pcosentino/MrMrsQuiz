@@ -1,49 +1,10 @@
-.home.container
+.container.home
 	.row
-		#myCarousel.carousel.slide{"data-ride" => "carousel"}
-			/ Indicators
-			%ol.carousel-indicators
-				%li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
-				/ %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-				/ %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
-				/ %li{"data-slide-to" => "3", "data-target" => "#myCarousel"}
-			/ Wrapper for slides
-			.carousel-inner{:role => "listbox"}
-				.item.active
-					= image_tag("slide1.jpg")
-					.carousel-caption
-						%h1 YOUR AD
-						%h3 ON THE ROAD!
-						%h5 ASK ABOUT CAR WRAPS!
-				/ .item
-				/ 	= image_tag("http://placehold.it/1200x431")
-				/ .item
-				/ 	= image_tag("http://placehold.it/1200x431")
-				/ .item
-				/ 	= image_tag("http://placehold.it/1200x431")
-			/ Left and right controls
-			%a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel", :role => "button"}
-				%span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
-				%span.sr-only Previous
-			%a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel", :role => "button"}
-				%span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
-				%span.sr-only Next
-	.row.main
-		%p.col-md-12 
-			Le's Signs has been fabricating signs for businesses in the Chicago, IL area since 1984. Owner Tom Le does all work himself and can accommodate any size neon sign, banner or billboard. Let Le’s Signs promote your business! Mr. Le prides himself in his professionalism when working with each customer to meet both the functionality and design you prefer. 
-		%article.col-md-3.col-sm-6
-			%h2 General
-			= link_to( "", pages_gallary_path, :id => 'general')
-			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in molestie velit. Duis ut risus dolor. 
-		%article.col-md-3.col-sm-6
-			%h2 Electric
-			= link_to( "", pages_gallary_path, :id => 'electric')
-			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in molestie velit. Duis ut risus dolor. 
-		%article.col-md-3.col-sm-6
-			%h2 Print
-			= link_to( "", pages_gallary_path, :id => 'print')
-			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in molestie velit. Duis ut risus dolor. 
-		%article.col-md-3.col-sm-6
-			%h2 Other
-			= link_to( "", pages_gallary_path, :id => 'other')
-			%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in molestie velit. Duis ut risus dolor. 
+		%h1.col-md-12 Welcome!
+	
+		%p.col-md-12 World-wide leaders in couples research and therapy, Drs. John and Sarah Olson have found that one of the most important features of successful relationships is the quality of the friendship between partners, or how well they know one another.
+
+		%p.col-md-12 So – think you know your partner’s inner world? Put your knowledge to the test by answering these 10 questions. Get them all right for a chance to win our Grand Prize!
+	
+		.row.start
+			= link_to( "Start the test", questions_one_path, :class => "col-md-12")

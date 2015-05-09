@@ -12,4 +12,15 @@ $( document ).ready(function() {
     		$("#next").get(0).click();
     	});
     });
+
+    $(".dierks").on("click", function(){
+        swal({
+            title: "You are correct!",
+            imageUrl: '../../assets/drunk.png',
+            type: "success",
+        },
+        function(isConfirm){
+            $("#next").get(0).click();
+        });
+    });
 });

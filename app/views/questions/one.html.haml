@@ -1,0 +1,21 @@
+.question.container
+	%h1.col-md-3 Question #1
+	%h4.progress-title.col-md-9 Progress Bar
+	.progress.col-md-9
+		.progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "10", "aria-valuenow" => "10", :role => "progressbar", :style => "width:10%"}
+			10%
+
+	%h3.col-md-12 Many people don't know Paolo has a unique middle name, named after his grandfather. What is Paolo's middle name?
+	.answer.container
+		.row
+			%button.btn.btn-info.col-md-1.incorrect A
+			%p.col-md-3 Eugenio
+			%button.btn.btn-info.col-md-1.incorrect B
+			%p.col-md-3 Eduardo
+		.row
+			%button.btn.btn-info.sweet-12.col-md-1.correct C
+			%p.col-md-3 Emilio
+			%button.btn.btn-info.col-md-1.incorrect D
+			%p.col-md-3 Eric
+
+		= link_to( "next", questions_two_path, :id => 'next')

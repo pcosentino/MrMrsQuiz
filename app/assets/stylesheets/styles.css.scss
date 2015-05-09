@@ -1,18 +1,46 @@
-$orange: #f58a22;
-
-
+$blue: 			 #6b8188;
+$light-blue: #46b8da;
+$pink: 			 #FF06A2;
+$pink-hover: #F265BD; 
 body{
-	background:url("bkgnd-gray.jpg");		
+	font-family: 'Shadows Into Light Two', cursive;
+	background:asset-url("symphony.png");
+	p{
+	  color: #000;
+	  font-size: 1.5em;
+	  margin: 0;
+	}
+	a{
+		color:$pink;
+		&:hover{
+			color:$pink-hover;
+		}
+	}
 }
 
 /////////////// NAVIGATION ///////////////
 .nav{
-	background:url("bkgnd-blue.jpg");
-	border-bottom: 3px solid #8eceff;
+	background:$blue;
+	padding-top:2em;
+	padding-bottom:2em;
+	img{
+		width:321px;
+		max-width: 100%;
+		border:2px dashed #fff;
+	}
 	a{
-		color:#fff;
-		margin: 3em 0 2em 2em;
-  	display: inline-block;
+		font-size:1.5em;
+  	text-align: center;
+	}
+	.extra-links{
+		.link{
+			border-top:2px dashed $blue;
+			border-bottom:2px dashed $blue;
+			border-right:2px dashed $blue;
+			background:#fff;
+		}
+	}
+	#home{
 	}
 	.pull-right{
 		margin-top:1em;
@@ -22,95 +50,79 @@ body{
 	}
 }
 
-/////////////// FOOTER ///////////////
-footer{
-	background:url("bkgnd-blue.jpg");
-	border-bottom: 3px solid #8eceff;
-	h5{
-		width:100%;
-		color:#fff;
-		margin:2em 0;
+
+/////////////// SWEET ALERT ///////////////
+.sweet-alert .sa-icon.sa-custom{
+	width:209px!important;
+	height:275px!important;
+}
+
+
+
+/////////////// CONTAINER ///////////////
+.question, .home, .prize{
+	border:2px dashed $blue;
+	background:#fff;
+	.container{
+		height: 400px;
+	}
+	h1{
+		font-size: 3.7em;
+	}
+	.start{
+		margin:1em -15px;
+		a{
+			font-size: 1.8em;
+			text-decoration: underline;
+			padding-left:0;
+			text-align: center;
+		}
+	}
+	.progress-title{
+		text-align: center;
+	}
+	.progress{
+		padding:0;
+		.progress-bar{
+			background:$pink;
+		}
+	}
+	h3{
+		line-height: 2em;
+	}
+	.answer{
+		margin: 2em 0;
+		.row{
+			margin:1em 0;
+		} 
+	}
+	#next{
+		display: none;
+	}
+}
+
+
+.home p{
+	margin:1em 0; 
+}
+.prize{
+	h1, h2{
 		text-align: center;
 	}
 }
 
-/////////////// HOME PAGE ///////////////
-.home{
-	#myCarousel{
-		.carousel-caption{
-			width:20%;
-			left:70%;
-			bottom:0;
-			padding-top:10%;
-			background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
-			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
-			h1{
-			  font-family: impact;
-				font-size: 4.3em;
-				margin-bottom:0;
-			}
-			h3{
-				font-size: 1.9em;
-				margin: 0;
-			}
-			h5{
-				  color: yellow;
-				  font-weight: bold;
-				  font-style: italic;
-				  font-size: 1.06em;
-				  margin-top: 0;
-			}
-		}
-	}
-	.main{
-		background:#fff;
-		h2{
-			color:$orange;
-		}
-		a{
-			display: inline-block;
-			width:245px;
-			height: 245px;
-		}
-		#general{
-			background: url("category-general.jpg");
-			-webkit-transition: .5s;
-			transition: .5s;
-			&:hover{
-				opacity:.5;
-			}
-		}
-		#electric{
-			background: url("category-electric.jpg");
-			-webkit-transition: .5s;
-			transition: .5s;
-			&:hover{
-				opacity:.5;
-			}
-		}
-		#print{
-			background: url("category-print.jpg");
-			-webkit-transition: .5s;
-			transition: .5s;
-			&:hover{
-				opacity:0.5;
-			}
-		}
-		#other{
-			background: url("category-other.jpg");
-			-webkit-transition: .5s;
-			transition: .5s;
-			&:hover{
-				opacity:0.5;
-			}
-		}
-		p{
-			padding:2%;
-		}
+/////////////// FOOTER ///////////////
+footer{
+	background:$blue;
+	position:relative;
+	height:100px;
+	clear:both;
+	padding-top:1em;
+	h5{
+		cursor:pointer;
+		width:100%;
+		color:#fff;
+		margin:.3em 0;
+		text-align: center;
 	}
 }

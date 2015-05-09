@@ -1,0 +1,21 @@
+.question.container
+	%h1.col-md-3 Question #7
+	%h4.progress-title.col-md-9 Progress Bar
+	.progress.col-md-9
+		.progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "70", "aria-valuenow" => "70", :role => "progressbar", :style => "width:70%"}
+			70%
+
+	%h3.col-md-12 Lucy and Paolo had 127 dates the first year they were dating. Where did Paolo take Lucy on their first date?
+	.answer.container
+		.row
+			%button.btn.btn-info.col-md-1.incorrect A
+			%p.col-md-3 Ra Sushi
+			%button.btn.btn-info.col-md-1.correct B
+			%p.col-md-3 Pinstripes
+		.row
+			%button.btn.btn-info.sweet-12.col-md-1.incorrect C
+			%p.col-md-3 The Casino
+			%button.btn.btn-info.col-md-1.incorrect D
+			%p.col-md-3 The Sybaris
+
+		= link_to( "next", questions_eight_path, :id => 'next')

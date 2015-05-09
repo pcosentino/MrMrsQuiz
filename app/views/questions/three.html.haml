@@ -1,0 +1,21 @@
+.question.container
+	%h1.col-md-3 Question #3
+	%h4.progress-title.col-md-9 Progress Bar
+	.progress.col-md-9
+		.progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "30", "aria-valuenow" => "30", :role => "progressbar", :style => "width:30%"}
+			30%
+
+	%h3.col-md-12 Paolo has a variety of desktop wallpapers on his computers. Which term best describes those pictures?
+	.answer.container
+		.row
+			%button.btn.btn-info.col-md-1.incorrect A
+			%p.col-md-3 Soccer Players
+			%button.btn.btn-info.col-md-1.incorrect B
+			%p.col-md-3 Sports Cars
+		.row
+			%button.btn.btn-info.sweet-12.col-md-1.correct C
+			%p.col-md-3 Pixar Movies
+			%button.btn.btn-info.col-md-1.incorrect D
+			%p.col-md-3 Chicks in Bikinis
+
+		= link_to( "next", questions_four_path, :id => 'next')

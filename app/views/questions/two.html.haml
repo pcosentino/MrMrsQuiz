@@ -1,0 +1,21 @@
+.question.container
+	%h1.col-md-3 Question #2
+	%h4.progress-title.col-md-9 Progress Bar
+	.progress.col-md-9
+		.progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "20", "aria-valuenow" => "20", :role => "progressbar", :style => "width:20%"}
+			20%
+
+	%h3.col-md-12 Paolo loves food, especially from Da Luciano's Resturant. What is Paolo's favorite dish to order at Da Luciano's?
+	.answer.container
+		.row
+			%button.btn.btn-info.col-md-1.incorrect A
+			%p.col-md-3 Chicago Style Hot Dog
+			%button.btn.btn-info.col-md-1.incorrect B
+			%p.col-md-3 Corn Beef and Cabbage
+		.row
+			%button.btn.btn-info.sweet-12.col-md-1.incorrect C
+			%p.col-md-3 Tripe
+			%button.btn.btn-info.col-md-1.correct D
+			%p.col-md-3 Risotto with Fresh Tomato, Arugula and Shrimp
+
+		= link_to( "next", questions_three_path, :id => 'next')

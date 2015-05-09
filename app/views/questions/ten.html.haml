@@ -1,0 +1,22 @@
+.question.container
+	%h1.col-md-3 Question #10
+	%h4.progress-title.col-md-9 Progress Bar
+	.progress.col-md-9
+		.progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "100", "aria-valuenow" => "100", :role => "progressbar", :style => "width:100%"}
+			100% LAST QUESTION!
+
+
+	%h3 WITHOUT LOOKING -- What color shirt is Paolo currently wearing?
+	.answer.container
+		.row
+			%button.btn.btn-info.col-md-1.incorrect A
+			%p.col-md-3 Red
+			%button.btn.btn-info.col-md-1.correct B
+			%p.col-md-3 White
+		.row
+			%button.btn.btn-info.sweet-12.col-md-1.incorrect C
+			%p.col-md-3 Green
+			%button.btn.btn-info.col-md-1.incorrect D
+			%p.col-md-3 Gray
+
+		= link_to( "next", pages_prize_path, :id => 'next')

@@ -16,7 +16,7 @@ $( document ).ready(function() {
     $(".dierks").on("click", function(){
         swal({
             title: "You are correct!",
-            imageUrl: "<%= asset_url('drunk.png') %>",
+            imageUrl: "<%= asset_path('images/drunk.png') %>",
             type: "success",
         },
         function(isConfirm){

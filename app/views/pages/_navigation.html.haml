@@ -1,9 +1,9 @@
-.container.nav
-	= link_to( image_tag("logo.jpg"), pages_index_path, :id => 'home', :class => "col-md-4" )
-	.extra-links
-		= link_to "About Us", questions_one_path, :class => "col-xs-12 col-md-2 link"
-		= link_to "Parenting", questions_one_path, :class => "col-xs-12 col-md-2 link"
-		= link_to "Suscribe", questions_one_path, :class => "col-xs-12 col-md-2 link"
-		= link_to "Contact", questions_one_path, :class => "col-xs-12 col-md-2 link"
+.navbar
+	.container
+		= link_to( image_tag("logo.jpg"), pages_index_path, :id => 'home', :class => "col-xs-12 col-sm-4 col-lg-4" )
+		.extra-links
+			= link_to "About Us", questions_one_path, :class => "col-xs-12 col-sm-2 col-md-2 link hidden-xs"
+			= link_to "Parenting", questions_one_path, :class => "col-xs-12 col-sm-2 col-md-2 link hidden-xs"
+			= link_to "Contact", questions_one_path, :class => "col-xs-12 col-sm-2 col-md-2 link hidden-xs"
 
-		
+			

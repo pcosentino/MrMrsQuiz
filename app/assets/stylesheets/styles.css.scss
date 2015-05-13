@@ -19,14 +19,16 @@ body{
 }
 
 /////////////// NAVIGATION ///////////////
-.nav{
+.navbar{
 	background:$blue;
-	padding-top:2em;
-	padding-bottom:2em;
+	padding-top:1em;
+	padding-bottom:1em;
 	img{
-		width:321px;
 		max-width: 100%;
 		border:2px dashed #fff;
+	}
+	.navbar-brand{
+		color:#fff;
 	}
 	a{
 		font-size:1.5em;
@@ -50,7 +52,11 @@ body{
 	}
 }
 
-
+.navbar-inverse .navbar-nav>.active>a{
+	color:$pink;
+	background:#fff;
+	margin:.1em 0; 
+}
 /////////////// SWEET ALERT ///////////////
 .sweet-alert .sa-icon.sa-custom{
 	width:209px!important;
@@ -72,12 +78,10 @@ body{
 	}
 	.start{
 		margin:1em -15px;
-		a{
-			font-size: 1.8em;
-			text-decoration: underline;
-			padding-left:0;
-			text-align: center;
-		}
+		font-size: 1.8em;
+		text-decoration: underline;
+		padding-left:0;
+		text-align: center;
 	}
 	.progress-title{
 		text-align: center;

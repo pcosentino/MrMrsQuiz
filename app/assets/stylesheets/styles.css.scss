@@ -67,7 +67,7 @@ body{
 
 
 /////////////// CONTAINER ///////////////
-.question, .home, .prize{
+.question, .home{
 	border:2px dashed $blue;
 	background:#fff;
 	.container{
@@ -111,7 +111,13 @@ body{
 	margin:1em 0; 
 }
 .prize{
-	h1, h2{
+	border:2px dashed $blue;
+	background:#fff;
+	h1{
+		color:red;
+		text-align: center;
+	} 
+	h2{
 		text-align: center;
 	}
 }

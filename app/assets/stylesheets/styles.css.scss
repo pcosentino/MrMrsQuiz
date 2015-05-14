@@ -52,11 +52,6 @@ body{
 	}
 }
 
-.navbar-inverse .navbar-nav>.active>a{
-	color:$pink;
-	background:#fff;
-	margin:.1em 0; 
-}
 /////////////// SWEET ALERT ///////////////
 .sweet-alert .sa-icon.sa-custom{
 	width:209px!important;
@@ -107,8 +102,13 @@ body{
 }
 
 
-.home p{
-	margin:1em 0; 
+.home{
+	h1{
+		text-align: center;
+	} 
+	p{
+		margin:1em 0; 
+	}
 }
 .prize{
 	border:2px dashed $blue;

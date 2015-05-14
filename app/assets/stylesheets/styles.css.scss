@@ -23,6 +23,8 @@ body{
 	background:$blue;
 	padding-top:1em;
 	padding-bottom:1em;
+	margin-bottom:0;
+	border-radius:0;
 	img{
 		max-width: 100%;
 		border:2px dashed #fff;
@@ -36,9 +38,7 @@ body{
 	}
 	.extra-links{
 		.link{
-			border-top:2px dashed $blue;
-			border-bottom:2px dashed $blue;
-			border-right:2px dashed $blue;
+			border-right:2px solid $blue;
 			background:#fff;
 		}
 	}
@@ -63,7 +63,7 @@ body{
 
 /////////////// CONTAINER ///////////////
 .question, .home{
-	border:2px dashed $blue;
+	border:2px solid $blue;
 	background:#fff;
 	.container{
 		height: 400px;
@@ -111,7 +111,7 @@ body{
 	}
 }
 .prize{
-	border:2px dashed $blue;
+	border:2px solid $blue;
 	background:#fff;
 	h1{
 		font-size: 2.4em;
@@ -135,5 +135,23 @@ footer{
 		font-size: 13px;
 		margin:.5em 0 1em 0;
 		text-align: center;
+	}
+}
+
+
+
+
+////////// MEDIA QUERIES ///////////
+@media screen and (min-width: 850px) {
+	.prize{
+		h1{
+			font-size: 5em;
+		}
+		h2{
+			font-size: 4em;
+		}
+		h3{
+			font-size: 2em;
+		}
 	}
 }

@@ -1,7 +1,7 @@
 .question.container
-	%h1.col-md-3 Question #10
-	%h4.progress-title.col-md-9 Progress Bar
-	.progress.col-md-9
+	%h1.col-md-4 Question #10
+	%h4.progress-title.col-md-7 Progress Bar
+	.progress.col-md-7
 		.progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "100", "aria-valuenow" => "100", :role => "progressbar", :style => "width:100%"}
 			100% LAST QUESTION!
 
@@ -10,13 +10,13 @@
 	.answer.container
 		.row
 			%button.btn.btn-info.col-md-1.incorrect A
-			%p.col-md-5.col-lg-5 "You Only Live Once" -The Strokes
-			%button.btn.btn-info.col-md-1.correct B
-			%p.col-md-5.col-lg-5 "Read My Mind" -The Killers
-			.row
+			%p.col-md-5.col-lg-5 "Until You" <br> - Billy Currington
+			%button.btn.btn-info.col-md-1.incorrect B
+			%p.col-md-5.col-lg-5 "Meant To Be" <br> - Sammy Kershaw
+			.row.hidden-xs.hidden-sm
 			%button.btn.btn-info.col-md-1.incorrect C
-			%p.col-md-5.col-lg-5 "What About Now" -Lonestar
-			%button.btn.btn-info.col-md-1.incorrect D
-			%p.col-md-5.col-lg-5 "My Last Name" -Dierks Bentley
+			%p.col-md-5.col-lg-5 "What About Now" <br> - Lonestar
+			%button.btn.btn-info.col-md-1.correct D
+			%p.col-md-5.col-lg-5 "My Last Name" <br> - Dierks Bentley
 
 		= link_to( "next", pages_prize_path, :id => 'next')

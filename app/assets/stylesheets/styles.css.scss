@@ -142,6 +142,11 @@ footer{
 
 
 ////////// MEDIA QUERIES ///////////
+@media screen and (max-width: 991px) {
+	.question{
+		h1{text-align:center;}
+	}
+}
 @media screen and (min-width: 850px) {
 	.prize{
 		h1{

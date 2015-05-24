@@ -55,7 +55,7 @@ body{
 /////////////// SWEET ALERT ///////////////
 .sweet-alert .sa-icon.sa-custom{
 	width:209px!important;
-	height:275px!important;
+	height:270px!important;
 	background-image:asset-data-url("drunk.png")!important;
 }
 
@@ -145,6 +145,16 @@ footer{
 @media screen and (max-width: 991px) {
 	.question{
 		h1{text-align:center;}
+	}
+	.sweet-alert h2{
+		margin-top: .2em !important;  
+		margin-bottom: .2em !important;
+	}
+	.sweet-alert button{
+		margin-top:.2em !important;
+	}
+	.sweet-alert .sa-icon.sa-custom{
+		margin-bottom: 0 !important;
 	}
 }
 @media screen and (min-width: 850px) {
